@@ -1,5 +1,5 @@
 # github actions to build and push image to dockerhub
-# 
+#
 name: "TechTrends - Package with Docker"
 
 # only on push
@@ -35,3 +35,4 @@ jobs:
         with:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.DOCKERHUB_REPO }}:latest
+# ^^ that's the tag for the new image to be pushed to DH
