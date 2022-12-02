@@ -10,8 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_REPO: tt_project
 
     steps:
       -
@@ -34,5 +32,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ env.GITHUB_REPO }}:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/techtrends:latest
 # ^^ that's the tag for the new image to be pushed to DH
