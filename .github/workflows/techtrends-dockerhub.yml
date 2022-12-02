@@ -1,3 +1,4 @@
+# github actions to build and push image to dockerhub 
 name: "TechTrends - Package with Docker"
 
 # only on push
